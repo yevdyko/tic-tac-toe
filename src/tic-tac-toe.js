@@ -13,7 +13,10 @@ class TicTacToe {
     }
 
     nextTurn(rowIndex, columnIndex) {
-       
+        if (this.board[rowIndex][columnIndex] === null)  {
+            this.board[rowIndex][columnIndex] = this.getCurrentPlayerSymbol();
+            this.turn++;
+        }
     }
 
     isFinished() {
