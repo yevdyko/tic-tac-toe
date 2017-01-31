@@ -28,7 +28,7 @@ class TicTacToe {
     }
 
     noMoreTurns() {
-
+        return this.turn === 9;
     }
 
     isDraw() {
