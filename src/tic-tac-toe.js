@@ -1,6 +1,11 @@
 class TicTacToe {
     constructor() {
-
+        this.board = [
+            [null, null, null],
+            [null, null, null], 
+            [null, null, null]
+        ]
+        this.turn = 0;
     }
 
     getCurrentPlayerSymbol() {
@@ -8,7 +13,7 @@ class TicTacToe {
     }
 
     nextTurn(rowIndex, columnIndex) {
-
+        
     }
 
     isFinished() {
