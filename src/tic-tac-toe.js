@@ -24,7 +24,31 @@ class TicTacToe {
     }
 
     getWinner() {
+        for (let i = 0; i < 3; i++) {
+            if (this.board[0][i] === this.board[1][i] && 
+                this.board[0][i] === this.board[2][i]) {
+                return this.board[0][i];
+            }
+        }
 
+        for (let j = 0; j < 3; j++) {
+            if (this.board[j][0] === this.board[j][1] && 
+                this.board[j][0] === this.board[j][2]) {
+                return this.board[j][0];
+            }
+        }  
+
+        if (this.board[0][0] === this.board[1][1] && 
+            this.board[0][0] === this.board[2][2]) {
+            return this.board[0][0];
+        }
+
+        if (this.board[0][2] === this.board[1][1] && 
+            this.board[0][2] === this.board[2][0]) {
+            return this.board[0][2];
+        }
+
+        return null;
     }
 
     noMoreTurns() {
