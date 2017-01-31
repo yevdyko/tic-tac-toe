@@ -36,7 +36,7 @@ class TicTacToe {
     }
 
     getFieldValue(rowIndex, colIndex) {
-
+        return this.board[rowIndex][colIndex];
     }
 }
 
