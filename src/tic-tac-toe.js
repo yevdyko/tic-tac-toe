@@ -20,7 +20,7 @@ class TicTacToe {
     }
 
     isFinished() {
-
+        return (this.getWinner() !== null || this.isDraw());
     }
 
     getWinner() {
