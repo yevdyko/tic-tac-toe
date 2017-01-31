@@ -9,11 +9,11 @@ class TicTacToe {
     }
 
     getCurrentPlayerSymbol() {
-
+        return this.turn % 2 === 0 ? "x" : "o";
     }
 
     nextTurn(rowIndex, columnIndex) {
-        
+       
     }
 
     isFinished() {
